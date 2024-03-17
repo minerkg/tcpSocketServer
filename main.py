@@ -14,7 +14,7 @@ def tcp_server():
 
 def send_message(client_socket):
     while True:
-        message = input("Your message: ")
+        message = input("Your message to client: ")
         client_socket.send(message.encode("utf-8"))
 
 
